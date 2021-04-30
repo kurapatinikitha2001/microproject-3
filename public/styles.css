@@ -1,0 +1,93 @@
+.c1{
+    text-align:center;
+    font-size: 60px;
+    padding-top: 50px;
+}
+.c2{
+    text-decoration: none;
+        background-color:#e4789c;
+        border-radius: 15px;
+            border: none;
+            color: white;
+            padding: 20px 34px ;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            margin-right:30px ;
+            cursor: pointer;
+            width:100px;
+            height:50px;
+            font-size: x-large;
+    
+
+}
+table,th,td{
+    opacity: 0.8;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding:15px;
+    text-align :left;
+}
+ 
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:nth-child(odd){
+    background-color: #fff;
+}
+body{
+    background-image: url("pic.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: max-content;
+    opacity:2;
+}
+.c3{
+    text-decoration: none;
+        background-color:#475bc9;
+        border-radius: 20px;
+            border: none;
+            color: white;
+            padding: 20px 20px ;
+            text-align: center;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4px 4px;
+            margin-right:30px ;
+            cursor: pointer;
+            width:100px;
+            height:10px;
+            font-size: large;
+}
+.container{
+    text-align: center;
+    
+    font-size: larger;
+    
+}
+
+label,input{
+    margin-bottom:40px;
+    width:150px;
+    height:40px;
+}
+#update{
+    width:70px;
+    height:40px;   
+}
+#delete{
+    width:70px;
+    height:40px;   
+}
+#submit{
+    width:70px;
+    height:40px;   
+}
+#actualcon{
+    text-align: center;
+}

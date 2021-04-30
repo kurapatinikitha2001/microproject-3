@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <title>Icecream Parlour</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body >
+        <h1 class="c1">Icecream Parlour</h1>
+        
+            <center>
+                <h3  style="display:inline;"><a href="/create" class="c2">Add New Product</a></h3>
+                <h3  style="display:inline;"><a href="/updatestock" class="c2">Update stock</a></h3>
+                <h3  style="display:inline;"><a href="/deleteproduct" class="c2">Delete Product</a></h3>
+            </center>
+        
+        
+            <div id="actualcon">
+        <h2>Welcome</h2>
+
+        <p>The market for ice cream in this country has expanded greatly over the past couple of decades as different types of ice creams have been introduced by manufacturers. This increase in popularity has led to a growth in the number of different outlets that now sell ice cream. As well as providing a healthy sector for your business, it also means more competition. There has been a huge growth in supermarket sales of ice cream (now approaching £1bn) and there has been an increase in the number of small businesses run by farmers selling ice cream made from their own milk - it is estimated there are about 1,000 artisan ice cream makers in the UK. In addition, there has been a significant increase in the number of ice cream parlours themselves.
+
+            Even though the average consumption of ice cream stands at about 9 litres per person, there has been a reduction in the amount of ice cream sold due to concerns about health, and in particular obesity, because of the high sugar and fat content of ice cream. The trend has been for consumers to cut back on the quantity of ice cream they buy, with the worst affected product being family packs. However, expenditure levels have held up reasonably well as people have traded up to premium and luxury products, particularly desserts. The most popular flavour is chocolate. Despite the reduction in ice cream sales overall, one area of growth was children's ice creams and lollies.
+        </p>
+    </div>
+        <center>
+            <table>
+                <tr>
+                    <th>IcId</th>
+                    <th>Flavour</th>
+                    <th>price</th>
+                    <th>Stock</th>
+                    <th>Size[S/M/L]</th>
+                </tr>
+                <% for(var i=0;i<data.length;i++){%>
+                    <tr>
+                        <td><%= data[i].icid %></td>
+                        <td><%= data[i].flavour %></td>
+                        <td><%= data[i].price %></td>
+                        <td><%= data[i].stock %></td>
+                        <td><%= data[i].size %></td>
+                    </tr>
+                <%}
+                %>
+            </table>
+        </center>
+    </body>
+</html>
